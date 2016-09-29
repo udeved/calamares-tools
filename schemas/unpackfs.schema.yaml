@@ -6,6 +6,6 @@ mapping:
         sequence:
           - type: map
             mapping:
-                "source": { type: str }
+                "source": { type: str, required: true }
                 "sourcefs": { type: str }
                 "destination": { type: str }

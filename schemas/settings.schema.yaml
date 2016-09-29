@@ -22,11 +22,11 @@ mapping:
                 "show":
                     type: seq
                     sequence:
-                        - { type: str, enum: [welcome, netinstall, locale, keyboard, partition, users, summary, finished], unique: true }
+                        - { type: str, unique: true }
                 "exec":
                     type: seq
                     sequence:
-                        - { type: str, enum: [partition, mount, chrootcfg, unpackfs, networkcfg, machineid, fstab, locale, keyboard, localecfg, luksopenswaphookcfg, luksbootkeyfile, plymouthcfg, initcpiocfg, initcpio, users, displaymanager, mhwdcfg, hwclock, servicescfg, services, grubcfg, bootloader, postcfg, umount, packages, removeuser, dracut], unique: true }
+                        - { type: str, unique: true }
     "branding": { type: str, required: true }
     "prompt-install": { type: bool, default: false }
     "dont-chroot": { type: bool, default: false }
