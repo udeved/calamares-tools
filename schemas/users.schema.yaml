@@ -10,4 +10,5 @@ mapping:
     "doAutologin": { type: bool, default: true }
     "sudoersGroup": { type: str, required: true }
     "setRootPassword": { type: bool, default: true }
-    "doReusePassword": { type: bool, default: true }
+    "availableShells": { type: str }
+    "avatarFilePath": { type: str }

@@ -9,6 +9,7 @@ mapping:
       mapping:
         "requiredStorage": { type: float, required: true }
         "requiredRam": { type: float, required: true }
+        "internetCheckUrl": { type: str }
         "check":
             required: true
             type: seq

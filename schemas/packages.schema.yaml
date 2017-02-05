@@ -2,6 +2,7 @@
 type: map
 mapping:
     "backend": { type: str, required: true, enum: [packagekit, zypp, yum, dnf, urpmi, apt, pacman, portage, entropy] }
+    "update_db": { type: bool, default: true }
     "operations":
         type: seq
         sequence:
@@ -16,6 +17,14 @@ mapping:
                     sequence:
                         - { type: text }
                 "localInstall":
+                    type: seq
+                    sequence:
+                        - { type: text }
+                "try_install":
+                    type: seq
+                    sequence:
+                        - { type: text }
+                "try_remove":
                     type: seq
                     sequence:
                         - { type: text }
